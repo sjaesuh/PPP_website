@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: Articles
 heading: Find the perfect plan for your business
@@ -76,22 +77,6 @@ faq:
 			{% for feature in plan.features %}
 				<li {% if feature.highlight %} class="highlighted"{% endif %}>{{ feature.text }}</li>
 			{% endfor %}
+=======
+>>>>>>> refs/remotes/origin/main
 
-			{% if plan.call_to_action %}
-				<li class="pricing-cta"><div class="button"><a style="background: {{ plan.color }}" href="{{ plan.call_to_action.link }}">{{ plan.call_to_action.text }} &rarr;</a></div></li>
-			{% endif %}
-		</ul>
-	{% endfor %}
-</div>
-
-{% if page.faq %}
-	<h2>Pricing FAQ</h2>
-	<dl class="faq">
-		{% for item in page.faq %}
-			<div>
-				<dt>{{ item.question }}</dt>
-				<dd>{{ item.answer }}</dd>
-			</div>
-		{% endfor %}
-	</dl>
-{% endif %}
